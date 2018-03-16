@@ -42,16 +42,15 @@
 % information. You should be able to find them on the MSDS for the
 % substance.
 \newcommand{\Hazards}{%
-H225: Highly flammable liquid and vapour.\\
-H319: Causes serious eye irritation.\\
+  \ghs{h}{225}\\
+  \ghs{h}{319}\\
 }
 \newcommand{\Precautions}{%
-P201: Keep away from heat/sparks/open flames/hot surfaces. -- No smoking.\\
-P233: Keep container tightly closed.\\
-P243: Take precautionary measures against static discharge.\\
-P280: Wear protective gloves / protective clothing / eye protection /
-face protection.\\
-P403+235: Store in a well ventilated place. Keep cool.\\
+  \ghs{p}{210}\\
+  \ghs{p}{233}\\
+  \ghs{p}{243}\\
+  \ghs{p}{280}\\
+  \ghs{p}{403+235}\\
 }
 \newcommand{\Additionals}{%
 }
@@ -67,6 +66,7 @@ P403+235: Store in a well ventilated place. Keep cool.\\
 \usepackage{ifthen}
 \usepackage{graphicx}
 \usepackage{labels}
+\usepackage{ghsystem}
 % Settings for the label package; 8 105x74 stickers on an A4 page.
 \LabelCols=2%
 \LabelRows=4%
